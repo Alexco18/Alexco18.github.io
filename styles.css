@@ -42,24 +42,19 @@ main {
     justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 1rem;
-    border: 2px solid #ddd;
-    padding: 1rem;
-    border-radius: 10px;
-    background: rgba(255, 255, 255, 0.8); /* Améliore la lisibilité */
 }
 
 /* Colonne de gauche avec les informations du projet */
 .left-column {
-    width: 40%; /* Augmente la largeur pour réduire l'espace */
     display: flex;
     flex-direction: column;
+    width: 35%; /* Augmenté de 30% à 35% pour réduire l'espace */
     gap: 1rem;
 }
 
-/* Ajustement de la hauteur des blocs à gauche */
+/* Modification demandée : Agrandir les blocs à gauche */
 .project-title, .objectives {
-    flex-grow: 1; /* Étend la hauteur des deux blocs */
-    height: 100%;
+    width: 100%; /* S'assure qu'ils prennent toute la largeur de la colonne */
     background-color: #f9f9f9;
     padding: 1rem;
     border: 1px solid #ddd;
@@ -69,14 +64,9 @@ main {
 
 /* Colonne de droite avec les résultats */
 .results {
-    width: 50%; /* Garde la largeur du bloc "Résultat(s)" */
+    width: 48%; /* Garde la taille actuelle */
     margin-top: 0;
     margin-left: auto;
-    background-color: #f9f9f9;
-    padding: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Images et vidéos */
@@ -93,5 +83,7 @@ footer {
     color: #fff;
     padding: 1rem 0;
     text-align: center;
-    position: relative; /* Empêche qu'il cache le contenu */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
