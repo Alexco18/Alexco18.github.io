@@ -1,41 +1,37 @@
+/* Fond et Polices */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    background-image: url('votre-image-de-fond.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #333;
 }
 
+/* En-tête */
 header {
-    background: #333;
+    background: #001f3f; /* Couleur liée à l'aéronautique */
     color: #fff;
-    padding: 1rem 0;
+    padding: 2rem 0;
     text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-section {
+/* Contenu Principal */
+main {
     padding: 2rem;
-    margin: 2rem 0;
-    border-bottom: 1px solid #ddd;
+    text-align: center;
 }
 
+/* Pied de Page */
 footer {
-    text-align: center;
-    padding: 1rem 0;
     background: #333;
     color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
