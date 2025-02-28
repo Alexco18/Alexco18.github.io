@@ -88,18 +88,21 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
-.objectives, .results {
+.project-title, .objectives, .results {
     background-color: #f9f9f9;
     padding: 1rem;
     border: 1px solid #ddd;
     border-radius: 5px;
     width: 48%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    flex: 1; /* Ajoutez ceci pour que les deux éléments aient la même largeur */
-    margin-right: 1%; /* Ajoutez une petite marge droite pour les objectifs */
+}
+
+/* Alignement des projets et objectifs en colonne */
+.project-container:first-child .project-title, .objectives, .results {
+    width: 100%;
 }
 
 .results img, .results video {
