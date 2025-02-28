@@ -1,86 +1,74 @@
-/* Fond et Polices */
+/* Styles généraux */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-image: url('votre-image-de-fond.jpg');
+    background-image: url('votre-image-de-fond.jpg'); /* Image de fond */
     background-size: cover;
     background-position: center;
     color: #333;
+    text-align: center;
 }
 
 /* En-tête */
 header {
     background: #001f3f;
-    color: #fff;
+    color: white;
     padding: 2rem 0;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-bottom: 2rem;
 }
 
-/* Contenu Principal */
-main {
-    padding: 2rem;
-    text-align: center;
+/* Section À Propos de Moi */
+.about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
 }
 
-/* Styles pour les titres des années */
-.year-title {
-    background-color: #001f3f;
+.about-me-container {
+    background: rgba(255, 255, 255, 0.8); /* Fond blanc semi-transparent */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Conteneur des boutons */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap; /* Permet l’adaptation sur mobile */
+}
+
+/* Boutons */
+.btn {
+    background: #001f3f;
     color: white;
-    padding: 1rem;
+    padding: 12px 20px;
     border-radius: 5px;
-    margin-bottom: 1rem;
-    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* Conteneur des projets scolaires */
-.project-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 1rem;
-}
-
-/* Colonne de gauche avec les informations du projet */
-.left-column {
-    display: flex;
-    flex-direction: column;
-    width: 35%; /* Augmenté de 30% à 35% pour réduire l'espace */
-    gap: 1rem;
-}
-
-/* Modification demandée : Agrandir les blocs à gauche */
-.project-title, .objectives {
-    width: 100%; /* S'assure qu'ils prennent toute la largeur de la colonne */
-    background-color: #f9f9f9;
-    padding: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* Colonne de droite avec les résultats */
-.results {
-    width: 48%; /* Garde la taille actuelle */
-    margin-top: 0;
-    margin-left: auto;
-}
-
-/* Images et vidéos */
-.results img, .results video {
-    display: block;
-    margin-top: 1rem;
-    max-width: 100%;
-    border-radius: 5px;
+/* Effet au survol */
+.btn:hover {
+    background: #004080;
+    transform: scale(1.05);
 }
 
 /* Pied de Page */
 footer {
     background: #333;
-    color: #fff;
+    color: white;
     padding: 1rem 0;
     text-align: center;
     position: fixed;
