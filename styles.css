@@ -86,9 +86,16 @@ footer {
 /* Styles pour les sections de projets scolaires */
 .project-container {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 1rem;
+}
+
+.left-column {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    gap: 1rem;
 }
 
 .project-title, .objectives, .results {
@@ -96,22 +103,19 @@ footer {
     padding: 1rem;
     border: 1px solid #ddd;
     border-radius: 5px;
-    width: 100%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 1rem;
 }
 
-.project-title {
-    margin-bottom: 1rem;
+/* Alignement des rectangles */
+.results {
+    width: 48%;
+    margin-top: 0; /* Aligne le rectangle des résultats avec le rectangle du titre du projet */
 }
 
 .objectives {
-    height: calc(100% - 2rem);
-}
-
-.results {
-    margin-top: -2rem;
-    margin-bottom: 1rem;
+    width: 100%;
+    margin-top: 1rem;
+    flex-grow: 1; /* Augmente la taille des objectifs pour correspondre à la longueur des résultats */
 }
 
 .results img, .results video {
