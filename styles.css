@@ -27,15 +27,17 @@ header {
     justify-content: center;
     align-items: center;
     min-height: 50vh;
+    margin-top: -30px; /* Rapproche du header */
 }
 
 .about-me-container {
-    background: rgba(255, 255, 255, 0.8); /* Fond blanc semi-transparent */
-    padding: 20px;
+    background: #d0e4ff; /* Bleu ciel légèrement foncé */
+    padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    max-width: 800px;
+    max-width: 85%; /* Prend plus de place en largeur */
     margin: auto;
+    text-align: center;
 }
 
 /* Conteneur des boutons */
