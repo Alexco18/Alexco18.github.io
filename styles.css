@@ -17,6 +17,17 @@ header {
     padding: 2rem 0;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem; /* Espace entre l'en-tête et la section suivante */
+}
+
+/* Section À propos de moi */
+.about-me {
+    background: #f7f7f7; /* Couleur de fond différente */
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Alignement du texte à gauche */
 }
 
 /* Contenu Principal */
