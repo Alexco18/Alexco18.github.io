@@ -109,16 +109,18 @@ footer {
 .project-title {
     width: 100%;
     margin-bottom: 1rem; /* Ajuste l'espace sous le rectangle Intitulé */
+    height: auto; /* Augmente la longueur du rectangle Intitulé */
 }
 
 .objectives {
     width: 100%;
     margin-top: 1rem;
+    height: auto; /* Augmente la hauteur du rectangle Objectifs */
     flex-grow: 1; /* Augmente la taille des objectifs pour correspondre à la longueur des résultats */
 }
 
 .results {
-    width: 68%; /* Ajuste la largeur des résultats */
+    width: 48%; /* Remet les valeurs de base du rectangle Résultats */
     margin-top: 0; /* Aligne le rectangle des résultats avec le rectangle du titre du projet */
 }
 
