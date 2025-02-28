@@ -72,3 +72,27 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+/* Styles pour les sections de projets scolaires */
+.project-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+.objectives, .results {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 48%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.results img, .results video {
+    display: block;
+    margin-top: 1rem;
+    max-width: 100%;
+    border-radius: 5px;
+}
