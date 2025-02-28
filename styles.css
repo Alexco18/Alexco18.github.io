@@ -20,57 +20,10 @@ header {
     margin-bottom: 2rem;
 }
 
-/* Section À propos de moi */
-.about-me {
-    background: #d0e7ff;
-    padding: 2rem;
-    margin: 2rem;
-    margin-left: 2%;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 90%;
-    text-align: left;
-}
-
 /* Contenu Principal */
 main {
     padding: 2rem;
     text-align: center;
-}
-
-/* Conteneur de Grille */
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    padding: 20px;
-}
-
-/* Élément de Grille */
-.grid-item {
-    background-color: #007BFF;
-    color: white;
-    padding: 2rem;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s;
-}
-
-.grid-item:hover {
-    background-color: #0056b3;
-}
-
-/* Pied de Page */
-footer {
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }
 
 /* Styles pour les titres des années */
@@ -83,22 +36,30 @@ footer {
     text-align: center;
 }
 
-/* Styles pour les sections de projets scolaires */
+/* Conteneur des projets scolaires */
 .project-container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 1rem;
+    border: 2px solid #ddd;
+    padding: 1rem;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.8); /* Améliore la lisibilité */
 }
 
+/* Colonne de gauche avec les informations du projet */
 .left-column {
+    width: 40%; /* Augmente la largeur pour réduire l'espace */
     display: flex;
     flex-direction: column;
-    width: 30%;
     gap: 1rem;
 }
 
-.project-title, .objectives, .results {
+/* Ajustement de la hauteur des blocs à gauche */
+.project-title, .objectives {
+    flex-grow: 1; /* Étend la hauteur des deux blocs */
+    height: 100%;
     background-color: #f9f9f9;
     padding: 1rem;
     border: 1px solid #ddd;
@@ -106,27 +67,31 @@ footer {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Ajuster la longueur des rectangles */
-.project-title {
-    width: calc(100% - 1rem); /* Largeur ajustée pour réduire l'espace */
-    margin-bottom: 0.5rem; /* Réduit l'espace sous le rectangle Intitulé */
-}
-
-.objectives {
-    width: calc(100% - 1rem); /* Largeur ajustée pour réduire l'espace */
-    margin-top: 0.5rem; /* Réduit l'espace au-dessus du rectangle Objectifs */
-    flex-grow: 1;
-}
-
+/* Colonne de droite avec les résultats */
 .results {
-    width: 48%;
+    width: 50%; /* Garde la largeur du bloc "Résultat(s)" */
     margin-top: 0;
-    margin-left: auto; /* Ajoute un petit espace pour ne pas coller */
+    margin-left: auto;
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Images et vidéos */
 .results img, .results video {
     display: block;
     margin-top: 1rem;
     max-width: 100%;
     border-radius: 5px;
+}
+
+/* Pied de Page */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    position: relative; /* Empêche qu'il cache le contenu */
 }
