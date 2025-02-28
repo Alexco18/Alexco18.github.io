@@ -1,3 +1,88 @@
+/* Fond et Polices */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-image: url('votre-image-de-fond.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #333;
+}
+
+/* En-tête */
+header {
+    background: #001f3f;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+/* Section À propos de moi */
+.about-me {
+    background: #d0e7ff;
+    padding: 2rem;
+    margin: 2rem;
+    margin-left: 2%;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    text-align: left;
+}
+
+/* Contenu Principal */
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Conteneur de Grille */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Élément de Grille */
+.grid-item {
+    background-color: #007BFF;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.grid-item:hover {
+    background-color: #0056b3;
+}
+
+/* Pied de Page */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Styles pour les titres des années */
+.year-title {
+    background-color: #001f3f;
+    color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
 /* Styles pour les sections de projets scolaires */
 .project-container {
     display: flex;
