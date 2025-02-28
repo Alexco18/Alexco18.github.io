@@ -106,13 +106,19 @@ footer {
     padding: 1rem;
     border: 1px solid #ddd;
     border-radius: 5px;
-    width: 48%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Alignement des rectangles */
-.objectives, .results {
-    align-self: flex-start;
+.objectives {
+    width: 100%;
+    margin-right: 20px;
+}
+
+.results {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
 }
 
 .results img, .results video {
