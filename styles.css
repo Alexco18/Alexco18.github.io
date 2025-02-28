@@ -22,11 +22,13 @@ header {
 
 /* Section À propos de moi */
 .about-me {
-    background: #f7f7f7; /* Couleur de fond différente */
+    background: #d0e7ff; /* Fond bleu ciel */
     padding: 2rem;
     margin: 2rem;
+    margin-left: 5%; /* Marge à gauche pour décaler la section */
     border-radius: 10px; /* Coins arrondis */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Ajuste la largeur pour laisser de la place à gauche */
     text-align: left; /* Alignement du texte à gauche */
 }
 
